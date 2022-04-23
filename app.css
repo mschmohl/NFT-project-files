@@ -1,0 +1,204 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root {
+    --Content-price-color: hsl(178, 100%, 50%);
+  }
+
+html {
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+}
+
+body { 
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 327px;
+    min-height: 100vh;
+}
+
+.card {
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+    width: 327px;
+    height: 530px;
+    margin: 0 auto;
+    padding: 10px 10px 20px 10px;
+    width: 100%;
+    max-width: 327px;
+    display: flex;
+    flex-direction: column;
+}
+
+#main {
+    border-radius: 5px;
+    margin: 10px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+#main:hover {
+    filter: grayscale(100%);  
+    --Content-price-color: hsla(178, 100%, 50%, 0.4);;
+    background-color: var(--Content-price-color);  
+}
+/* #main__with-hover-img div {
+    width: 17.65em;
+    height: 17.65em;
+    --Content-price-color: hsla(178, 100%, 50%, 0.4);;
+    background-color: var(--Content-price-color);
+    border-radius: .5em;
+    position: absolute;
+    top: calc(100vh - 78.9vh);
+    opacity: 0;
+    transition: all .4s ease-in-out;
+  } */
+
+.cyan-overlay:active {
+    width: 308px;
+    height: 308px;
+    position: absolute;
+    border-radius: 5px;
+    margin: 10px;
+    background: hsl(178, 100%, 50%);
+    opacity:.50;
+    
+    /* opacity: 50; */
+}
+
+#header {
+    color: hsl(0, 0%, 100%);
+    padding: 10px;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+#header:hover,#jules:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.body {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    padding-left: 10px;
+    padding-top: 5px;
+    align-items: center;
+}
+#special {
+    color: hsl(178, 100%, 50%);
+    font-size: 1em;
+    font-weight: 400;
+    border-bottom: 1px solid hsl(215, 51%, 70%);
+    margin: 5px 10px 10px 10px;
+    padding: 10px 0 20px 0;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#ethereum {
+    height: 12px;
+    padding-right: 3px;
+}
+
+#clock {
+    height:15px;
+    /* margin-left: 102px; */
+    margin-right: 4px;
+}
+
+#time {
+    color: hsl(215, 51%, 70%);
+    font-weight: 400;
+    font-size: 1em;
+    float: right;
+    margin: none;
+}
+
+#avatar {
+    display:block;
+    border: solid 1px hsl(0, 0%, 100%);
+    height: 20px;
+    border-radius: 50%;
+    flex-direction: row;
+    align-items: left;
+    margin: 0px 10px 0px 0px;
+    float: left;
+}
+
+#creator {
+    display:block;
+    color: hsl(215, 51%, 70%);
+    font-size: 1em;
+    font-weight: 300;
+    padding: 10px;
+    display: inline-block; 
+    position: relative;
+}
+
+#jules {
+    color: hsl(0, 0%, 100%);
+    align-self: left;
+    margin: 20px 0 0 3px;
+}
+
+#jules:hover {
+
+}
+
+.attribution {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    color: hsl(0, 0%, 100%);
+    font-size: 5px;
+}
