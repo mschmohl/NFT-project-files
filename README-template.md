@@ -10,4 +10,4 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 ### What I learned
 
-I learned that addng the colorchanging eefect is very challenging. I spent several hours trying to get this effect to work. At the time of submission, I still don't have the color effect working on hover. I'll welcome any feedback. Thank you!
+This project gave me additional practice using flexbox. I struggled to get the image to change to the cyan monotone image with eye icon on hover. It took me several tries and several days to get this effect to work. I ended up making a copy of the equilibrium image in Photoshop and adding the color overlay and eye icon into one jpeg file.

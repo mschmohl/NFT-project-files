@@ -1,0 +1,187 @@
+/* -------- Reset CSS --------- */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+/* body {
+	line-height: 1;
+} */
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* -------- Main CSS --------- */
+* {
+    font-family: "Outfit", sans-serif;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Outfit", sans-serif;
+    justify-content: center;
+}
+
+.container {
+    background-color: hsl(216, 50%, 16%);
+    width: 350px;
+    height: auto;
+    border-radius: 24px;
+    padding: 24px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-image {
+    width: 302px;
+    height:auto;
+    border-radius: 10px; 
+}
+
+.image-hover {
+    width: 302px;
+    height:auto;
+    border-radius: 10px;
+}
+
+.figure{
+    position: relative;
+    max-width: 100%;
+}
+
+.figure img.image-hover{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity .2s;
+    cursor: pointer;
+}
+
+.figure:hover img.image-hover {
+    opacity: 1;
+}
+
+.title {
+    color: hsl(0, 0%, 100%);
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 18px;
+}
+
+.title:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.sub-title {
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+    font-weight: 300;
+    padding-top: 18px;
+    line-height: 1.5em;
+}
+
+.info-line {
+    display: flex;
+    padding-top: 18px;
+    justify-content: space-between;
+}
+
+.info {
+    display: flex;
+}
+
+.icons {
+    margin-right: 10px;
+}
+
+.icon-text {
+    color: hsl(178, 100%, 50%);
+}
+
+.clock-text {
+    color: hsl(215, 51%, 70%);
+}
+
+.rule {
+    border-top: 1px solid hsl(215, 51%, 70%);
+    margin: 18px 0;
+}
+
+img.avatar {
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+    width: 32px;
+    height: auto;
+    margin-right: 18px;
+}
+
+.credit-line {
+    display: flex;
+    align-items: center;
+}
+h3 {
+    color: hsl(215, 51%, 70%);
+}
+
+h3 span {
+    color: hsl(0, 0%, 100%);
+}
+
+h3 span:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.attribution {
+    color: hsl(0, 0%, 100%);
+    margin-top: 20px;
+}
+
+
